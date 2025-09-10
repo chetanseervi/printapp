@@ -1,9 +1,10 @@
 {
   "env": {
-    "REACT_APP_RAZORPAY_TEST_KEY": "@razorpay_test_key",
+    "REACT_APP_RAZORPAY_TEST_KEY": "rzp_test_EblmSxm105uaZV",
     "REACT_APP_RAZORPAY_LIVE_KEY": "@razorpay_live_key",
-    "REACT_APP_RAZORPAY_KEY": "@razorpay_key",
-    "REACT_APP_COMPANY_NAME": "@company_name",
+    "REACT_APP_RAZORPAY_KEY": "rzp_test_EblmSxm105uaZV",
+    "REACT_APP_RAZORPAY_SECRET": "UgEUUtc1zaWat6YYgo6PGYFD",
+    "REACT_APP_COMPANY_NAME": "Print Shop",
     "REACT_APP_COMPANY_LOGO": "@company_logo"
   }
 }
