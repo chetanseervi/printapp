@@ -1,17 +1,15 @@
 // Razorpay Configuration
 export const RAZORPAY_CONFIG = {
-  // Test keys - Replace with your actual keys
-  TEST_KEY: 'rzp_test_EblmSxm105uaZV',
-  LIVE_KEY: 'rzp_live_YOUR_LIVE_KEY_HERE',
+  // Get keys from environment variables
+  TEST_KEY: process.env.REACT_APP_RAZORPAY_TEST_KEY || 'rzp_test_EblmSxm105uaZV',
+  LIVE_KEY: process.env.REACT_APP_RAZORPAY_LIVE_KEY || '',
   
-  // Use test key for development, live key for production
-  CURRENT_KEY: process.env.NODE_ENV === 'production' 
-    ? 'rzp_live_YOUR_LIVE_KEY_HERE' 
-    : 'rzp_test_EblmSxm105uaZV',
+  // Use environment variable for current key, fallback to test key
+  CURRENT_KEY: process.env.REACT_APP_RAZORPAY_KEY || process.env.REACT_APP_RAZORPAY_TEST_KEY || 'rzp_test_EblmSxm105uaZV',
     
   // Company details
-  COMPANY_NAME: 'Print Shop',
-  COMPANY_LOGO: 'https://your-logo-url.com/logo.png', // Replace with your logo URL
+  COMPANY_NAME: process.env.REACT_APP_COMPANY_NAME || 'Print Shop',
+  COMPANY_LOGO: process.env.REACT_APP_COMPANY_LOGO || 'https://your-logo-url.com/logo.png',
   CURRENCY: 'INR'
 };
 
